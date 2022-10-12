@@ -49,13 +49,13 @@ tasks.bootBuildImage {
 	imageName = project.name
 	environment["BP_JVM_VERSION"] = "17.*"
 
-    docker {
-        publishRegistry {
-            username = project.findProperty("registryUsername") as String?
-            password = project.findProperty("registryToken") as String?
-            url = project.findProperty("registryUrl") as String?
-        }
-    }
+//    docker {
+//        publishRegistry {
+//            username = project.findProperty("registryUsername") as String?
+//            password = project.findProperty("registryToken") as String?
+//            url = project.findProperty("registryUrl") as String?
+//        }
+//    }
 }
 
 tasks.withType<Test> {
